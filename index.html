@@ -11,18 +11,26 @@
         <h1>GetFlix</h1>
     </div>
 
-    <p>Busca tus Películas y series favoritas: </p>
+    <p class="subTitulo">Busca tus Películas y series favoritas: </p>
 
-    <select name="" id="selectLista">
-        <option value="peliculas.json">Peliculas</option>
-        <option value="series.json">Series</option>
-    </select>
+    <div class="selectLista">
+        <div><p class="categoria">Selecciona tu categoria:</p></div>
+        <select id="selectLista" class="select">
+            <option value="peliculas.json">Peliculas</option>
+            <option value="series.json">Series</option>
+        </select>
+    </div>
+    
    
-    <input type="text" id="inputBuscar">
-    <button id="btnBuscar">Buscar</button>
+    <div class="input-btn">
+        <div></div>
+        <input type="text" id="inputBuscar" class="inputBuscar">
+        <button id="btnBuscar" class="btnBuscar">Buscar</button>
+    </div>
+    
 
     <ul id="resultadoBusqueda">
-        
+
     </ul>
 
 
